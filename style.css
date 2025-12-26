@@ -5,13 +5,17 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
 }
 
 .toolbox-container {
-  background-color: grey;
+ 
   height: 5rem;
   display: flex;
   align-items: center;
+  background-color: #2c2c2c;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .toolbox-priority-container {
@@ -27,6 +31,13 @@ body {
 .color-box {
   height: 2rem;
   width: 3rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .LightPink {
@@ -64,6 +75,8 @@ body {
   align-items: center;
 }
 
+
+
 .add-btn:hover {
   background-color: green;
   font-size: 3rem;
@@ -79,14 +92,22 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  gap:2rem
+  gap:2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .ticket-cont {
   height: 12rem;
   width: 15rem;
-  background-color: coral;
+  background-color: white;
   margin: 2px;
+  
+}
+
+.ticket-cont:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .Ticket_color {
@@ -94,8 +115,12 @@ body {
 }
 
 .Ticket-id {
-  height: 2rem;
-  background-color: yellow;
+  /* height: 2rem;
+  background-color: yellow; */
+  background-color: #f1f1f1;
+  color: #555;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
 }
 
 
@@ -106,6 +131,20 @@ body {
   font-size: 1.5rem;
 }
 
+.Ticket-lock i {
+  cursor: pointer;
+}
+
+.Ticket-lock i:hover {
+  color: #555;
+}
+
+.Ticket-task {
+  padding: 0.7rem;
+  font-size: 1rem;
+  flex-grow: 1;
+  overflow-wrap: break-word;
+}
 .model_popup-container {
   height: 40vh;
   width: 60vh;
@@ -114,6 +153,20 @@ body {
   position: absolute;
   left: 30%;
   top: 30%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .text_Area_Container {
@@ -140,5 +193,7 @@ body {
 }
 
 .Active{
-  border:2px solid goldenrod
+ border: 3px solid gold;
+  box-shadow: 0 0 10px gold;
+ 
 }
