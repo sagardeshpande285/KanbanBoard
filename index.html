@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ToolBar -->
+     <div class="toolbox-container">
+
+        <!-- color box -->
+        <div class="toolbox-priority-container">
+
+        <div class="LightPink  color-box"></div>
+        <div class="LightGreen color-box"></div>
+        <div class="LightBlue color-box"></div>
+        <div class="Black color-box"></div>
+
+        </div>
+
+
+
+        <!-- Action Box -->
+         <div class="action-button-container">
+            <div class="add-btn" ><i class="fa-solid fa-plus"></i></div>
+            <div class="remove-btn"><i class="fa-solid fa-trash"></i></div>
+         </div>
+</div>
+
+         <!-- Main Container -->
+         <div class="main-cont">
+           <!-- Ticket Container -->
+             <!-- <div class="ticket-cont">
+                <div class="Ticket_color LightBlue"></div>
+                <div class="Ticket-id">1234</div>
+                <div class="Ticket-task">Test  </div>
+                <div class="Ticket-lock"> <i class="fa-solid fa-lock"></i> </div>
+             </div> -->
+          </div>
+     
+          <div class="model_popup-container" >
+            <textarea class="text_Area_Container"></textarea>
+            <div class="Priority-colors-container">
+                <div class="priority-color LightPink"></div>
+                <div class="priority-color LightGreen"></div>
+                <div class="priority-color Active LightBlue"></div>
+                <div class="priority-color Black  "></div>
+            </div>
+
+          </div>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/shortid/2.2.16/shortid.min.js"></script>
+          <script src="script.js"></script>
+          
+</body>
+</html>
